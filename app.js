@@ -6,13 +6,8 @@ app.listen(8080, function(){
 
 });
 
-app.get('/pet', function(요청, 응답){
-    응답.send('펫용2품 쇼핑할 수 있는 페이지 입니다.');
-
-});
-
-app.get('/', function(요청,응답){
-    응답.sendFile(__dirname + '/Iframe.html')
+app.get('/', function(req,res){
+    res.sendFile(__dirname + '/Iframe.html')
 })
 
 
